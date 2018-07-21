@@ -1,3 +1,14 @@
-#landing_background {
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+#landing_background{
+    height: 100%;
+    width: 100%;
     background-color: #66d9ff;
+}
+
+#landing_intro_text{
+    font-family: 'Lobster Two';
 }
