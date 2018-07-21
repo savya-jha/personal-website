@@ -5,6 +5,9 @@ html, body{
     width: 100%;
 }
 
+h1{
+    margin-top: 0;
+}
 
 #landing_background{
     height: 100%;
