@@ -1,6 +1,6 @@
 html, body{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     height: 100%;
     width: 100%;
 }
@@ -12,5 +12,6 @@ html, body{
 }
 
 #landing_intro_text{
-    font-family: 'Lobster Two';
+    font-family: "Lobster Two";
+    color: "white"
 }
