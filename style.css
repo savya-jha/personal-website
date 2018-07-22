@@ -11,8 +11,47 @@ html, body{
     background-color: #66d9ff;
 }
 
-#landing_intro_text h1{
+#landing_foreground{
+    margin: auto;
+    height: 100%;
+    width: 70%;
+}
+
+#landing_header{
+    height: 32.5%;
+    width: 100%;
+}
+
+#landing_content{
+    height: 35%;
+    text-align: center;
+}
+
+.heading_text{
+    margin: 0;
     font-family: "Lobster Two";
     color: #ffffff;
-    margin-top: 0;
+    font-size: 60px;
+}
+
+.line_input{
+    width: 40%;
+    margin-top: 10px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px inset #ffffff;
+    box-shadow: 0 7px 17px -10px #ffffff;
+    caret-color: #ffffff;
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+}
+
+.line_input:focus{
+    outline: none;
+}
+
+#landing_footer{
+    height: 32.5%;
+    width: 100%;
 }
