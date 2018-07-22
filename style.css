@@ -31,7 +31,7 @@ html, body{
     margin: 0;
     font-family: "Lobster Two";
     color: #ffffff;
-    font-size: 60px;
+    font-size: 4em;
 }
 
 .line_input{
@@ -43,7 +43,7 @@ html, body{
     box-shadow: 0 7px 17px -10px #ffffff;
     caret-color: #ffffff;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 3.5em;
     text-align: center;
 }
 
