@@ -18,12 +18,11 @@ html, body{
 }
 
 #landing_header{
-    height: 32.5%;
+    height: 20em;
     width: 100%;
 }
 
 #landing_content{
-    height: 35%;
     text-align: center;
 }
 
@@ -52,6 +51,6 @@ html, body{
 }
 
 #landing_footer{
-    height: 32.5%;
+    height: 20em;
     width: 100%;
 }
