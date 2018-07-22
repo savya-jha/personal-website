@@ -14,7 +14,7 @@ html, body{
 #landing_foreground{
     margin: auto;
     height: 100%;
-    width: 70%;
+    width: 100%;
 }
 
 #landing_header{
@@ -34,7 +34,7 @@ html, body{
 }
 
 .line_input{
-    width: 40%;
+    width: 30%;
     margin-top: 10px;
     background: transparent;
     border: none;
