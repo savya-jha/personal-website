@@ -6,7 +6,6 @@ html, body{
     box-sizing: border-box;
 }
 
-/* For mobile */
 @media all {
     .centered{
         text-align: center;
@@ -16,6 +15,7 @@ html, body{
     }
     #landing_background{
         min-width: 300px;
+        min-height: 500px;
         height: 100%;
         width: 100%;
         background-color: #66d9ff;
@@ -27,10 +27,10 @@ html, body{
     }
     #landing_content{
         margin: auto;
-        height: 80%;
+        height: 82%;
     }
     #landing_text{
-        height: 44%;
+        height: 38%;
         width: 100%;
     }
     #landing_text h1{
@@ -40,22 +40,23 @@ html, body{
         color: #ffffff;
     }
     #entry_buttons{
-        height: 56%;
+        height: 62%;
         width: 100%;
     }
     .site_entry_button{
         float: left;
-        margin: 2%;
-        width: 46%;
-        height: 46%;
+        margin: 3%;
+        width: 44%;
+        height: 44%;
         font-family: "Domine";
         color: #ffffff;
         background-color: #7bdcfc;
-        box-shadow: 0 0.5px 3px rgba(0,0,0,0.06), 0 0.5px 5px rgba(0,0,0,0.12);
+        box-shadow: 0 0.5px 5px rgba(0,0,0,0.06), 0 0.5px 3px rgba(0,0,0,0.12);
     }
     .site_entry_button:hover {
-        transition: 0.4s;
+        transition: all 0.3s;
         background-color: #97e3fc;
+        box-shadow: 0 10px 50px rgba(0,0,0,0.10), 0 0.5px 3px rgba(0,0,0,0.08);
     }
     .site_entry_button a{
         display: inline-block;
@@ -65,82 +66,53 @@ html, body{
         color: inherit;
     }
     .site_entry_button a p{
-        margin:0;
-        padding:10px;
+        margin: 0;
+        padding: 0 16%;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (min-width: 700px){
+    #landing_text h1{
+        transition: all 0.3s ease-out;
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (min-width: 800px){
+    #landing_text{
+        transition: all 0.3s ease-out;
+        height: 50%;
+    }
+    #landing_text h1{
+        transition: all 0.3s ease-out;
+        font-size: 3em;
+    }
+    #entry_buttons{
+        transition: all 0.3s ease-out;
+        height: 50%;
+    }
+    .site_entry_button{
+        transition: all 0.3s ease-out;
+        margin: 2.5%;
+        width: 20%;
+        height: 60%;
+    }
+    .site_entry_button a p{
+        transition: all 0.3s ease-out;
+        padding: 0 20%;
         font-size: 1.5em;
     }
 }
 
-/* For desktop
-@media screen and (min-device-width: 750px){
+@media screen and (min-width: 1040px){
     #landing_foreground{
-        min-width:  750px;
+        transition: all 0.3s ease-out;
+        width: 1040px;
     }
-    #landing_foreground{
-        margin: auto;
-        height: 100%;
-        width: 70%;
-    }
-    #landing_content{
-        height: 60%;
-        text-align: center;
-        background-color: #f33555;
-    }
-    #landing_text{
-        margin: 1%;
-        height: 48%;
-        background-color: #222222;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .heading_text{
-        margin: 0 0 0.5em 0;
-        font-family: "Lobster Two";
-        color: #ffffff;
-        font-size: 3.5em;
-    }
-    #entry_buttons{
-        margin: 1%;
-        height: 48%;
-        width: inherit;
-        background-color: #333333;
-    }
-    .site_entry_button{
-
-    }
-    .site_entry_button{
-        float: left;
-        margin: 2%;
-        width: 46%;
-        height: 46%;
-        border-radius: 1px;
-        font-family: "Roboto Condensed";
-        color: #ffffff;
-        background-color: #66d9ff;
-        box-shadow: 0 0.5px 5px rgba(0,0,0,0.06), 0 0.5px 3px rgba(0,0,0,0.12);
-    }
-    .site_entry_button:hover {
-        transition: 0.4s;
-        box-shadow: 0 10px 50px rgba(0,0,0,0.10), 0 0.5px 3px rgba(0,0,0,0.08);
-        background: #97e3fc;
+    #landing_text h1{
+        transition: all 0.3s ease-out;
+        font-size: 3.2em;
+        padding-top: 40px;
     }
 }
-
-/* Extra styles
-/* This is for an input box with a underlined and shadowed input field
-    .line_input{
-        width: 40%;
-        margin-top: 10px;
-        background: transparent;
-        border: none;
-        border-bottom: 1px inset #ffffff;
-        box-shadow: 0 7px 17px -10px #ffffff;
-        caret-color: #ffffff;
-        color: #ffffff;
-        font-size: 4em;
-        text-align: center;
-    }
-    .line_input:focus{
-        outline: none;
-    }
-*/

@@ -1,0 +1,19 @@
+
+/* Extra styles
+/* This is for an input box with a underlined and shadowed input field
+    .line_input{
+        width: 40%;
+        margin-top: 10px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px inset #ffffff;
+        box-shadow: 0 7px 17px -10px #ffffff;
+        caret-color: #ffffff;
+        color: #ffffff;
+        font-size: 4em;
+        text-align: center;
+    }
+    .line_input:focus{
+        outline: none;
+    }
+*/
