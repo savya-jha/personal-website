@@ -3,54 +3,145 @@ html, body{
     padding: 0 !important;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
 }
 
-#landing_background{
-    height: 100%;
-    width: 100%;
-    background-color: #66d9ff;
+/* For mobile */
+@media all {
+    .centered{
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #landing_background{
+        min-width: 300px;
+        height: 100%;
+        width: 100%;
+        background-color: #66d9ff;
+    }
+    #landing_foreground{
+        margin: auto;
+        height: 100%;
+        width: 90%;
+    }
+    #landing_content{
+        margin: auto;
+        height: 80%;
+    }
+    #landing_text{
+        height: 44%;
+        width: 100%;
+    }
+    #landing_text h1{
+        margin: 0;
+        font-family: "Lobster Two";
+        font-size: 2.2em;
+        color: #ffffff;
+    }
+    #entry_buttons{
+        height: 56%;
+        width: 100%;
+    }
+    .site_entry_button{
+        float: left;
+        margin: 2%;
+        width: 46%;
+        height: 46%;
+        border-radius: 1px;
+        font-family: "Roboto Condensed";
+        color: #ffffff;
+        background-color: #7bdcfc;
+        box-shadow: 0 0.5px 3px rgba(0,0,0,0.06), 0 0.5px 5px rgba(0,0,0,0.12);
+    }
+    .site_entry_button:hover {
+        transition: 0.4s;
+        background-color: #97e3fc;
+    }
+    .site_entry_button a{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        color: inherit;
+    }
+    .site_entry_button a p{
+        margin:0;
+        padding:10px;
+        font-size: 1.5em;
+    }
 }
 
-#landing_foreground{
-    margin: auto;
-    height: 100%;
-    width: 100%;
+/* For desktop
+@media screen and (min-device-width: 750px){
+    #landing_foreground{
+        min-width:  750px;
+    }
+    #landing_foreground{
+        margin: auto;
+        height: 100%;
+        width: 70%;
+    }
+    #landing_content{
+        height: 60%;
+        text-align: center;
+        background-color: #f33555;
+    }
+    #landing_text{
+        margin: 1%;
+        height: 48%;
+        background-color: #222222;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .heading_text{
+        margin: 0 0 0.5em 0;
+        font-family: "Lobster Two";
+        color: #ffffff;
+        font-size: 3.5em;
+    }
+    #entry_buttons{
+        margin: 1%;
+        height: 48%;
+        width: inherit;
+        background-color: #333333;
+    }
+    .site_entry_button{
+
+    }
+    .site_entry_button{
+        float: left;
+        margin: 2%;
+        width: 46%;
+        height: 46%;
+        border-radius: 1px;
+        font-family: "Roboto Condensed";
+        color: #ffffff;
+        background-color: #66d9ff;
+        box-shadow: 0 0.5px 5px rgba(0,0,0,0.06), 0 0.5px 3px rgba(0,0,0,0.12);
+    }
+    .site_entry_button:hover {
+        transition: 0.4s;
+        box-shadow: 0 10px 50px rgba(0,0,0,0.10), 0 0.5px 3px rgba(0,0,0,0.08);
+        background: #97e3fc;
+    }
 }
 
-#landing_header{
-    height: 20em;
-    width: 100%;
-}
-
-#landing_content{
-    text-align: center;
-}
-
-.heading_text{
-    margin: 0;
-    font-family: "Lobster Two";
-    color: #ffffff;
-    font-size: 4em;
-}
-
-.line_input{
-    width: 30%;
-    margin-top: 10px;
-    background: transparent;
-    border: none;
-    border-bottom: 1px inset #ffffff;
-    box-shadow: 0 7px 17px -10px #ffffff;
-    caret-color: #ffffff;
-    color: #ffffff;
-    font-size: 3.5em;
-    text-align: center;
-}
-
-.line_input:focus{
-    outline: none;
-}
-
-#landing_footer{
-    height: 20em;
-    width: 100%;
-}
+/* Extra styles
+/* This is for an input box with a underlined and shadowed input field
+    .line_input{
+        width: 40%;
+        margin-top: 10px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px inset #ffffff;
+        box-shadow: 0 7px 17px -10px #ffffff;
+        caret-color: #ffffff;
+        color: #ffffff;
+        font-size: 4em;
+        text-align: center;
+    }
+    .line_input:focus{
+        outline: none;
+    }
+*/
