@@ -7,25 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster Two|Domine" rel="stylesheet">
     <link rel="shortcut icon" href="faviconwhite.ico">
+    <!-- Beginning of Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86674334-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-86674334-2');
+        </script>
+    <!-- End of Google Analytics -->
 </head>
 <body>
     <div id="landing_background">
-        <script>
-            window.onload = function() {
-             setTimeout(function(){show("line2");}, 900);
-             setTimeout(function(){show("entry_buttons");}, 1200);
-            }
-            function show(elemId){
-                document.getElementById(elemId).style.visibility = "visible";
-            }
-        </script>
         <div id="landing_foreground">
             <div class="centered" id="landing_content">
                 <div id="landing_text">
-                    <h1 class="centered">
-                        <p id="line1">Hi! My name is Savya.</p>
-                        <p id="line2">What brings you here?</p>
-                    </h1>
+                    <h1 class="centered"><p>Hi! My name is Savya. <br/> What brings you here?</p></h1>
                     <h1></h1>
                 </div>
                 <div id="entry_buttons">
@@ -54,13 +51,4 @@
         </div>
     </div>
 </body>
-<!-- Beginning of Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86674334-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-86674334-2');
-    </script>
-<!-- End of Google Analytics -->
 </html>
