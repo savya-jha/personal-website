@@ -6,7 +6,18 @@ html, body{
     box-sizing: border-box;
 }
 
-@media all {
+@keyframes vaporRise{
+    from{
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media all{
     .centered{
         text-align: center;
         position: relative;
@@ -39,7 +50,22 @@ html, body{
         font-size: 2.2em;
         color: #ffffff;
     }
+    #line1{
+        margin:0;
+        animation-name: vaporRise;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+    }
+    #line2{
+        visibility: hidden;
+        margin:0;
+        animation-name: vaporRise;
+        animation-delay: 0.9s;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-out;
+    }
     #entry_buttons{
+        visibility: hidden;
         height: 62%;
         width: 100%;
     }
@@ -52,9 +78,13 @@ html, body{
         color: #ffffff;
         background-color: #7bdcfc;
         box-shadow: 0 0.5px 5px rgba(0,0,0,0.06), 0 0.5px 3px rgba(0,0,0,0.12);
+        animation-name: vaporRise;
+        animation-delay: 1.2s;
+        animation-duration: 0.6s;
+        animation-timing-function: ease-out;
     }
     .site_entry_button:hover {
-        transition: all 0.3s;
+        transition: all 0.25s;
         background-color: #97e3fc;
         box-shadow: 0 10px 50px rgba(0,0,0,0.10), 0 0.5px 3px rgba(0,0,0,0.08);
     }

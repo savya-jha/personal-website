@@ -19,10 +19,22 @@
 </head>
 <body>
     <div id="landing_background">
+        <script>
+            window.onload = function() {
+             setTimeout(function(){show("line2");}, 900);
+             setTimeout(function(){show("entry_buttons");}, 1200);
+            }
+            function show(elemId){
+                document.getElementById(elemId).style.visibility = "visible";
+            }
+        </script>
         <div id="landing_foreground">
             <div class="centered" id="landing_content">
                 <div id="landing_text">
-                    <h1 class="centered">Hi! My name is Savya. <br/> What brings you here?</h1>
+                    <h1 class="centered">
+                        <p id="line1">Hi! My name is Savya.</p>
+                        <p id="line2">What brings you here?</p>
+                    </h1>
                     <h1></h1>
                 </div>
                 <div id="entry_buttons">
