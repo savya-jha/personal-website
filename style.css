@@ -51,6 +51,7 @@ html, body{
         color: #ffffff;
     }
     #landing_text h1 p{
+        margin: 0;
         animation-name: vaporRise;
         animation-duration: 0.3s;
         animation-timing-function: ease-out;
@@ -132,6 +133,5 @@ html, body{
     #landing_text h1{
         transition: all 0.3s ease-out;
         font-size: 3.2em;
-        padding-top: 40px;
     }
 }
